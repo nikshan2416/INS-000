@@ -24,12 +24,10 @@
         .wa-btn { background: #238636; margin-top: 10px; }
         .search-container { position: sticky; top: 10px; z-index: 100; margin-bottom: 20px; }
         .hidden { display: none; }
-    </style> 
+    </style>
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-    
+
+
 </head>
 <body>
 
@@ -65,6 +63,7 @@ const analytics = getAnalytics(app);
     </div>
 </div>
 
+};
 <script>
     let orders = JSON.parse(localStorage.getItem("ins_final_v7")) || [];
     let lastID = parseInt(localStorage.getItem("ins_id_v7")) || 8585;
@@ -193,4 +192,3 @@ _Thank you for choosing INS! We care for your safety._`;
   appId: "1:320380082704:web:32ad6519fb0cbdb9328895",
   measurementId: "G-1QC0P90HS1"
 };
-
