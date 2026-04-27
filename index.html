@@ -64,16 +64,7 @@ const analytics = getAnalytics(app);
         <div id="orderList"></div>
     </div>
 </div>
-<script>const firebaseConfig = {
-  apiKey: "AIzaSyCze_oJtEnJYNuZXYLkQ7vPRm1i8sBYl4A",
-  authDomain: "ins0-9828c.firebaseapp.com",
-  databaseURL: "https://ins0-9828c-default-rtdb.firebaseio.com",
-  projectId: "ins0-9828c",
-  storageBucket: "ins0-9828c.firebasestorage.app",
-  messagingSenderId: "320380082704",
-  appId: "1:320380082704:web:32ad6519fb0cbdb9328895",
-  measurementId: "G-1QC0P90HS1"
-};
+
 <script>
     let orders = JSON.parse(localStorage.getItem("ins_final_v7")) || [];
     let lastID = parseInt(localStorage.getItem("ins_id_v7")) || 8585;
@@ -192,6 +183,14 @@ _Thank you for choosing INS! We care for your safety._`;
         window.open(waLink, '_blank');
     }
 </script>
+<script>const firebaseConfig = {
+  apiKey: "AIzaSyCze_oJtEnJYNuZXYLkQ7vPRm1i8sBYl4A",
+  authDomain: "ins0-9828c.firebaseapp.com",
+  databaseURL: "https://ins0-9828c-default-rtdb.firebaseio.com",
+  projectId: "ins0-9828c",
+  storageBucket: "ins0-9828c.firebasestorage.app",
+  messagingSenderId: "320380082704",
+  appId: "1:320380082704:web:32ad6519fb0cbdb9328895",
+  measurementId: "G-1QC0P90HS1"
+};
 
-</body>
-</html>
