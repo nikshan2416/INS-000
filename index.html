@@ -92,7 +92,7 @@
             issue: cIssue.value,
             status: "Pending",
             time: new Date().toLocaleString(),
-            staff: "Awaiting...",
+            staff: "waiting...",
             staffPhone: "N/A",
             history: "Created"
         };
@@ -161,7 +161,7 @@
     function sendWA(id) {
         let o = orders.find(x => x.id === id);
         let phone = o.phone;
-        if(!phone.startsWith('94')) phone = '94' + phone.replace(/^0/, '');
+        if(!phone.startsWith('')) phone = '' + phone.replace(/^0/, '');
 
         let msg = `🟦 *I NETWORK SOLUTION PRIVATE LIMITED*
 ━━━━━━━━━━━━━━━━━━━━━
